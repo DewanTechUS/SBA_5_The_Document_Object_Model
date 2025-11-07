@@ -16,23 +16,22 @@
 // i am adding a cheat sheet so that you dont forget these things 
 // https://htmlcheatsheet.com/js/ // javascript cheat sheet to call DOM elements and other things
 //---------------------------------------------------------------------
-const form = document.getElementById("post-form");
- const postIdInput = document.getElementById("post-id");
- const titleInput = document.getElementById("title");
-const contentInput = document.getElementById("content");
+const form = document.getElementById("post-form"); // form element
+ const postIdInput = document.getElementById("post-id"); // post ID input
+ const titleInput = document.getElementById("title"); // title input
+const contentInput = document.getElementById("content"); // content input
+//------------------------
+ const formTitle = document.getElementById("form-title"); // form title
+   const saveBtn = document.getElementById("save-btn"); // save button
+ const cancelEditBtn = document.getElementById("cancel-edit-btn"); // cancel edit button
 //--
- const formTitle = document.getElementById("form-title");
-   const saveBtn = document.getElementById("save-btn");
- const cancelEditBtn = document.getElementById("cancel-edit-btn");
+ const formErrors = document.getElementById("form-errors"); // form errors div
+const titleError = document.getElementById("title-error"); // title error div
+const contentError = document.getElementById("content-error"); // content error div
 //--
- const formErrors = document.getElementById("form-errors");
-const titleError = document.getElementById("title-error");
-    const contentError = document.getElementById("content-error");
-//--
-const postsDiv = document.getElementById("posts");
-  const emptyMsg = document.getElementById("empty-message");
-
-  const DFMRFooter = document.getElementById("DFMR-footer");//DFMR
+const postsDiv = document.getElementById("posts"); // posts container
+  const emptyMsg = document.getElementById("empty-message"); // empty message
+  const DFMRFooter = document.getElementById("DFMR-footer"); // DFMR footer
 //------------------------
 // now i have handles to all the ids added in HTML.
 // i can use these handles to manipulate the DOM elements
