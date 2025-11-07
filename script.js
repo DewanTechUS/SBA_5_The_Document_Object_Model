@@ -78,3 +78,25 @@ function savePosts() {
   localStorage.setItem("blog-posts", json);
 }
 //console.log("localStorage saving testing", blogPosts); // i am testing in console
+
+// should show all posts on the page
+function renderPosts() {
+
+  postsDiv.innerHTML = "";
+
+  // no posts, show message in console
+  // display message/ logic
+  if (blogPosts.length === 0) {
+    emptyMsg.style.display = "block";
+    
+    //console.log("no posts."); testing it in console
+    
+    return;
+
+  } else {
+    emptyMsg.style.display = "none";
+  }
+
+  // testing
+  // console.log("Rendering posts:", blogPosts);
+}
