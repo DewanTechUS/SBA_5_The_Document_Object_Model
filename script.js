@@ -194,9 +194,12 @@ function validateForm() {
 
   return ok;
 }
- // reusable reset form 
+ // reset form 
  // check ref notes.js file for references
-function resetForm() { // reset form as per requirement of lesson // i lost my self here
+// function resetForm() { // reset form as per requirement of lesson // i lost my self here // ref mdn https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+// ref w3schools https://www.w3schools.com/jsref/prop_element_classlist.asp
+// ref stackoverflow https://stackoverflow.com/questions/195951/change-an-elements-class-with-javascript 
+function resetForm() {
   postIdInput.value = "";
   titleInput.value = "";
   contentInput.value = "";
@@ -204,4 +207,55 @@ function resetForm() { // reset form as per requirement of lesson // i lost my s
   saveBtn.textContent = "Save Post";
   cancelEditBtn.style.display = "none";
 }
+// handle form submit event` // ref event listener references
+// https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+// ref w3schools https://www.w3schools.com/jsref/met_element_addeventlistener.asp
+// ref stackoverflow https://stackoverflow.com/questions/6348493/what-does-addeventlistener-do-in-javascript
+// i am preventing default behavior of form submission to avoid page refresh
+// i will handle form submission manually
+// ref mdn https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
+// ref w3schools https://www.w3schools.com/jsref/event_preventdefault.asp
+// ref stackoverflow https://stackoverflow.com/questions/5963669/what-is-the-use-of-event-preventdefault-in-javascript
+//
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); // should stop page refresh
+  // i need to get form values
+  let title = titleInput.value; 
+  let content = contentInput.value;
+  let editingId = postIdInput.value; // if empty = new post // 
 
+  // check if title or content is empty
+if (title === "" || content === "") { // title or content is empty
+    alert("Please enter a title and content.");
+    return; // stop here
+  }
+
+if (editingId === "") {
+    // new post
+    let newPost = {
+   id: Date.now().toString(),
+   title: title,
+     content: content,
+      timestamp: new Date().toLocaleString()
+
+
+    };
+
+    blogPosts.push(newPost); // add new post
+  } else {
+    // editold post
+    let post = blogPosts.find(function (p) {
+      return p.id === editingId;
+    });
+
+if (post) {
+         post.title = title;
+post.content = content;
+      post.timestamp = new Date().toLocaleString();
+    }
+  }
+  
+      savePosts();  
+   renderPosts(); 
+   resetForm();   
+});
