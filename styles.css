@@ -1,0 +1,27 @@
+/* ref https://ps-lms.vercel.app/curriculum/se/412/ */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
+h1, 
+h2 {
+  text-align: center;
+}
+h4, p.subtitle {
+  text-align: center;
+  color: #555;
+}
+
