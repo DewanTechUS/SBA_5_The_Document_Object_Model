@@ -42,3 +42,23 @@ const postsDiv = document.getElementById("posts"); // posts container
 // ref stackoverflow: https://stackoverflow.com/questions/5223/what-is-an-array-in-javascript
 // i need one place to store posts before saving or rendering. // so i am using an array here
 let blogPosts = []; // array to store blog posts
+//----
+// Load saved posts from localStorage // this is a refertence from our teacher's lecture notes Mr. Bryan Sontos
+// ref mdn: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+// ref w3schools: https://www.w3schools.com/jsref/prop_win_localstorage.asp
+// ref stackoverflow: https://stackoverflow.com/questions/5224906/how-to-save-javascript-array-to-localstorage
+function loadPosts() {
+  // get saved posts from localStorage
+  
+                // when i refresh, it should bring back my any saved posts.
+    const saved = localStorage.getItem("blog-posts");
+
+  if (saved) {
+
+    blogPosts = JSON.parse(saved); // converting string back to array
+  } else {
+blogPosts = []; // no saved posts, empte array//
+  }
+}
+
+console.log("localStorage testing", blogPosts); // i am testing
