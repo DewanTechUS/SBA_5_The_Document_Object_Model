@@ -26,6 +26,70 @@
     <section aria-label="Create or edit a blog post">
       <h2 id="form-title">Create New Post</h2>
 
+      <!-- i add form for error messages // https://ps-lms.vercel.app/curriculum/se/412/sba -->
+      <div id="form-errors" class="error-box" aria-live="polite"></div> <!-- ARIA live region for dynamic error messages -->
+
+      <!-- i add form with novalidate to handle validation manually // https://ps-lms.vercel.app/curriculum/se/412/sba -->
+      <!-- https://ps-lms.vercel.app/curriculum/se/412/sba#:~:text=Display%20Posts%3A,dynamically%20using%20JavaScript. -->
+      <form id="post-form" novalidate> 
+
+        <!-- i add edit tracking field // https://ps-lms.vercel.app/curriculum/se/412/sba -->
+        <input type="hidden" id="post-id" />
+
+        <!-- i add title field // follow my highlighting link from https://ps-lms.vercel.app/curriculum/se/412/sba -->
+        
+        <label for="title">
+
+         Title <span class="required">Required</span>
+        </label>
+        <input
+          id="title"
+          type="text"
+          placeholder="Enter post title"
+        />
+        <small id="title-error" class="field-error"></small>
+
+<!-- i add content field // follow my highlighting link from https://ps-lms.vercel.app/curriculum/se/412/sba -->
+        <label for="content">
+        
+            Content <span class="required">Required</span>
+        </label>
+        <textarea
+          id="content"
+          rows="4"
+          placeholder="Write post content here"
+        ></textarea>
+        <small id="content-error" class="field-error"></small>
+
+ <!-- i add buttons for save and cancel edit // https://ps-lms.vercel.app/curriculum/se/412/sba -->
+        <div class="buttons">
+          <button type="submit" id="save-btn">Save Post</button>
+          <button
+        type="button"
+        id="cancel-edit-btn" 
+        class="secondary"
+        style="display: none;"
+          >
+<!-- i add style to hide Cancel Edit button initially // follow the instructions part 1 and part 2 // https://ps-lms.vercel.app/curriculum/se/412/sba -->
+      Cancel Edit
+        </button>
+      </div>
+     </form>
+    </section>
+
+    <!-- my posts List // https://ps-lms.vercel.app/curriculum/se/412/sba -->
+    <section aria-label="List of blog posts">
+      
+        <!-- i add heading for posts section // https://ps-lms.vercel.app/curriculum/se/412/sba -->
+         
+        <h2>My Posts</h2> 
+
+      <p id="empty-message" class="muted">
+        
+        No posts yet. I will create my first post above.
+      </p>
+      
+      <div id="posts"></div>
     
     </section>
 
