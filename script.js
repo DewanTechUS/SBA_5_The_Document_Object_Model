@@ -194,4 +194,14 @@ function validateForm() {
 
   return ok;
 }
+ // reusable reset form 
+ // check ref notes.js file for references
+function resetForm() { // reset form as per requirement of lesson // i lost my self here
+  postIdInput.value = "";
+  titleInput.value = "";
+  contentInput.value = "";
+  formTitle.textContent = "Create New Post";
+  saveBtn.textContent = "Save Post";
+  cancelEditBtn.style.display = "none";
+}
 
