@@ -99,4 +99,62 @@ function renderPosts() {
 
   // testing
   // console.log("Rendering posts:", blogPosts);
+    // create post elements and add to postsDiv
+    // loop through blogPosts array and create elements for each post // ref mdn: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+    // forEach reference from w3schools: https://www.w3schools.com/jsref/jsref_foreach.asp
+// forEach reference from stackoverflow: https://stackoverflow.com/questions/201183/how-to-loop-through-an-array-in-javascript
+// https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+// MDN - Node.appendChild()
+// https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
+
+    // i am using forEach to loop through the array and create elements for each post
+    // some references are using var instead of const. var is a old so use const//
+    // from blogPosts show HTML.
+    blogPosts.forEach(function (post) {
+    
+        const box = document.createElement("div"); 
+    
+    box.className = "post"; // add class to post bx
+    
+    box.dataset.id = post.id;
+                                // id attr
+    const titleEl = document.createElement("h3");
+    titleEl.textContent = post.title;
+                                         // title element / i am using h3 for title
+              const timeEl = document.createElement("small"); // timestamp element // dont forget small tag//
+    
+    timeEl.textContent = "Created: " + post.timestamp;
+        // timestamp
+    const contentEl = document.createElement("p");
+          contentEl.textContent = post.content;
+             // content
+    const editBtn = document.createElement("button");
+    
+                     editBtn.textContent = "Edit";
+    
+    editBtn.className = "edit-btn";
+        editBtn.onclick = function () {
+      startEdit(post.id);
+    };
+// edit btn
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Delete";
+    deleteBtn.className = "delete-btn";
+    deleteBtn.onclick = function () {
+      deletePost(post.id);
+    };
+    // i will add event listeners later for edit and delete buttons
+// delete btn
+    box.appendChild(titleEl);
+
+   box.appendChild(timeEl);
+   
+ box.appendChild(contentEl);
+    box.appendChild(editBtn);
+      box.appendChild(deleteBtn); 
+
+postsDiv.appendChild(box); // append post box to posts container
+  });
+
+
 }
