@@ -36,3 +36,10 @@ const postsDiv = document.getElementById("posts");
 //------------------------
 // now i have handles to all the ids added in HTML.
 // i can use these handles to manipulate the DOM elements
+//------
+// global array to store blog posts // in real applications, this data would come from a server or database when i will working with backend
+// ref mdn: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+// ref w3schools: https://www.w3schools.com/js/js_arrays.asp
+// ref stackoverflow: https://stackoverflow.com/questions/5223/what-is-an-array-in-javascript
+// i need one place to store posts before saving or rendering. // so i am using an array here
+let blogPosts = [];
