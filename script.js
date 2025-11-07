@@ -47,6 +47,7 @@ let blogPosts = []; // array to store blog posts
 // ref mdn: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 // ref w3schools: https://www.w3schools.com/jsref/prop_win_localstorage.asp
 // ref stackoverflow: https://stackoverflow.com/questions/5224906/how-to-save-javascript-array-to-localstorage
+
 function loadPosts() {
   // get saved posts from localStorage
 
@@ -57,8 +58,22 @@ function loadPosts() {
 
     blogPosts = JSON.parse(saved); // converting string back to array
   } else {
-blogPosts = []; // no saved posts, empte array//
+blogPosts = []; // no saved posts, empty array
   }
 }
 
 //console.log("localStorage testing", blogPosts); // i am testing
+// console.log to check if loading works
+// Save posts to localStorage
+// this is a refertence from our teacher's lecture notes Mr. Bryan Sontos
+// ref mdn: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+// ref w3schools: https://www.w3schools.com/jsref/prop_win_localstorage.asp
+// ref stackoverflow: https://stackoverflow.com/questions/5224906/how-to-save-javascript-array-to-localstorage
+// this referance is haved in notes.js file also
+function savePosts() {
+
+  const json = JSON.stringify(blogPosts);  // this is my instructor Bryan Santos instruction stringify-setItem // convert array to string
+  
+  localStorage.setItem("blog-posts", json);
+}
+console.log("localStorage saving testing", blogPosts); // i am testing in console
