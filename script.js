@@ -41,4 +41,4 @@ const postsDiv = document.getElementById("posts"); // posts container
 // ref w3schools: https://www.w3schools.com/js/js_arrays.asp
 // ref stackoverflow: https://stackoverflow.com/questions/5223/what-is-an-array-in-javascript
 // i need one place to store posts before saving or rendering. // so i am using an array here
-let blogPosts = [];
+let blogPosts = []; // array to store blog posts
