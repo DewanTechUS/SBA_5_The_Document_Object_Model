@@ -49,7 +49,7 @@ let blogPosts = []; // array to store blog posts
 // ref stackoverflow: https://stackoverflow.com/questions/5224906/how-to-save-javascript-array-to-localstorage
 function loadPosts() {
   // get saved posts from localStorage
-  
+
                 // when i refresh, it should bring back my any saved posts.
     const saved = localStorage.getItem("blog-posts");
 
@@ -61,4 +61,4 @@ blogPosts = []; // no saved posts, empte array//
   }
 }
 
-console.log("localStorage testing", blogPosts); // i am testing
+//console.log("localStorage testing", blogPosts); // i am testing
