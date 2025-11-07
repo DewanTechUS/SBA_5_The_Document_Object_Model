@@ -62,3 +62,34 @@ button:hover {
 button.secondary {
   background: gray;
 }
+
+
+.post {
+  background: #f9f9f9;
+   border: 1px solid #ccc;
+    padding: 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+.post-actions button {
+   margin-right: 5px;
+}
+
+.error-box {
+   color: red;
+  font-weight: bold;
+}
+
+
+.field-error {
+  color: red;
+         font-size: 0.9em;
+}
+
+
+
+.muted {
+   color: gray;
+  text-align: center;
+}
