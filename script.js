@@ -76,4 +76,4 @@ function savePosts() {
   
   localStorage.setItem("blog-posts", json);
 }
-console.log("localStorage saving testing", blogPosts); // i am testing in console
+//console.log("localStorage saving testing", blogPosts); // i am testing in console
