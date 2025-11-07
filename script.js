@@ -69,6 +69,7 @@ blogPosts = []; // no saved posts, empty array
 // ref mdn: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 // ref w3schools: https://www.w3schools.com/jsref/prop_win_localstorage.asp
 // ref stackoverflow: https://stackoverflow.com/questions/5224906/how-to-save-javascript-array-to-localstorage
+// MDN - JSON.stringify() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
 // this referance is haved in notes.js file also
 function savePosts() {
 
