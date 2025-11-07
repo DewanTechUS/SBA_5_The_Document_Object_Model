@@ -25,3 +25,22 @@ h4, p.subtitle {
   color: #555;
 }
 
+
+   form {
+  margin-top: 15px;
+}
+
+  label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input, textarea {
+   width: 100%;
+   padding: 8px;
+       margin-top: 5px;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+}
+
