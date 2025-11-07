@@ -158,3 +158,40 @@ postsDiv.appendChild(box); // append post box to posts container
 
 
 }
+
+// handle form submission 
+// i will` add validation here later
+//error messages/styles // clear previous errors
+// ref mdn https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+// ref w3schools https://www.w3schools.com/jsref/prop_element_classlist.asp
+// ref stackoverflow https://stackoverflow.com/questions/195951/change-an-elements-class-with-javascript 
+// ref youtube https://www.youtube.com/watch?v=In0nB0ABaUk
+function clearErrors() { 
+  formErrors.textContent = ""; // clear form errors
+  
+  titleError.textContent = "";
+  contentError.textContent = ""; // i am clearing title and content errors but i can add more if needed but giving only these two for now
+ // clear field-specific errors // title and content errors
+  titleInput.classList.remove("input-error"); // i am removing input-error class if exists
+  contentInput.classList.remove("input-error");
+}
+// ref youtube https://www.youtube.com/watch?v=In0nB0ABaUk // took help from this video for validation
+// ref w3schools https://www.w3schools.com/jsref/prop_element_classlist.asp
+                                   // Check required fields
+//
+function validateForm() {
+  let ok = true;
+// assume form is valid
+  if (title.value === "") {
+    alert("Please enter a title.");
+    ok = false;
+  }
+
+  if (content.value === "") {
+    alert("Please enter some content.");
+    ok = false;
+  }
+
+  return ok;
+}
+
