@@ -7,6 +7,11 @@ Cohort: Per Scholas 2025-Software Engineer (MERN Stack)
 GitHub: [https://github.com/DewanTechUS](https://github.com/DewanTechUS)  
 Portfolio: [https://dewantech.com](https://dewantech.com)
 
+## Note
+Please give proper credit if you use any part of my code in your project.
+I’ve invested a lot of time and effort into developing these files - acknowledgment or a mention is always appreciated.
+Thank you for respecting my work. DEWAN MAHMUD ROCKY
+
 ## Overview
 This project is my completed work for SBA 5 — The Document Object Model (DOM).  
 It is an Interactive Personal Blog Platform that allows users to:
