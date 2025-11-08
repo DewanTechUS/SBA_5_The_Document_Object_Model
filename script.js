@@ -217,6 +217,7 @@ function resetForm() {
 // ref w3schools https://www.w3schools.com/jsref/event_preventdefault.asp
 // ref stackoverflow https://stackoverflow.com/questions/5963669/what-is-the-use-of-event-preventdefault-in-javascript
 // ref youtube https://www.youtube.com/watch?v=PqAaHf7JKls
+
 form.addEventListener("submit", function (event) {
   event.preventDefault(); // should stop page refresh
   // i need to get form values
@@ -284,6 +285,19 @@ function startEdit(id) {
       saveBtn.textContent = "Update Post";    
   cancelEditBtn.style.display = "inline-block"; // show cancel button
 }
+// alert for Dewan Mahmud Rocky picture
+document.querySelector(".profile-image1").addEventListener("click", function() {
+  alert("This is Dewan Mahmud Rocky - Student at Per Scholas!");
+});
+
+// alart for Tishana Trainor picture
+document.querySelector(".profile-image2").addEventListener("click", function() {
+  alert("This is Instructor Tishana Trainor - my amazing teacher!");
+});
+// alert for Bryan Santos picture
+document.querySelector(".profile-image3").addEventListener("click", function() {
+  alert("This is Instructor Bryan Santos - another great teacher!");
+});
 
 //i am adding delete functionality// eventlistener for delete button
 // https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
