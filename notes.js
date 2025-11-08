@@ -1,5 +1,5 @@
 // Dewan Mahmud Rocky
-// this is a note for my classmates who use my codes but dont mention me
+// this is a note is for who use my codes but dont mention me.
 // please give me credits if you are using my codes or acknowledge me in your project
 // i spent a lot of time and effort to write these codes and i would appreciate it
 // thank you.
@@ -9,3 +9,36 @@
 
 //---------------------------------------------------------------------
 // ref https://ps-lms.vercel.app/curriculum/se/412/sba#:~:text=Create%20New%20Posts,if%20validation%20fails.
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
+// https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+// w3schools reference: https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+// stackoverflow reference: https://stackoverflow.com/questions/10192391/what-does-document-getelementbyid-do-in-javascript
+// https://htmlcheatsheet.com/js/ // javascript cheat sheet to call DOM elements and other things
+//--------
+// ref mdn: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+// ref w3schools: https://www.w3schools.com/js/js_arrays.asp
+// ref stackoverflow: https://stackoverflow.com/questions/5223/what-is-an-array-in-javascript
+// ref mdn: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+// ref w3schools: https://www.w3schools.com/jsref/prop_win_localstorage.asp
+// ref stackoverflow: https://stackoverflow.com/questions/5224906/how-to-save-javascript-array-to-localstorage
+// ref MDN - Window.localStorage https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+// ref MDN - JSON.parse() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
+// ref MDN - Document.createElement() https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+// ref MDN  Node.appendChild() https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
+// ref MDN https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+// ref w3schools https://www.w3schools.com/jsref/prop_element_classlist.asp
+// ref stackoverflow https://stackoverflow.com/questions/195951/change-an-elements-class-with-javascript
+// ref MDN https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+// ref w3schools https://www.w3schools.com/jsref/met_element_addeventlistener.asp
+// ref stackoverflow https://stackoverflow.com/questions/6348493/what-does-addeventlistener-do-in-javascript
+// ref MDN https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+// ref w3schools https://www.w3schools.com/jsref/met_element_addeventlistener.asp
+// ref stackoverflow https://stackoverflow.com/questions/6348493/what-does-addeventlistener-do-in-javascript
+// ref MDN https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
+// ref w3schools https://www.w3schools.com/jsref/event_preventdefault.asp
+// ref stackoverflow https://stackoverflow.com/questions/5963669/what-is-the-use-of-event-preventdefault-in-javascript
+// ref youtube https://www.youtube.com/watch?v=PqAaHf7JKls -- video
+// ref youtube https://www.youtube.com/watch?v=HkFlM73G-hk -- video
+// ref youtube https://www.youtube.com/watch?v=bVl5_UdcAy0 -- video
+// https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+// ref w3schools https://www.w3schools.com/jsref/met_element_addeventlistener.asp
