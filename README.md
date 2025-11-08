@@ -7,6 +7,9 @@ Cohort: Per Scholas 2025-Software Engineer (MERN Stack)
 GitHub: [https://github.com/DewanTechUS](https://github.com/DewanTechUS)  
 Portfolio: [https://dewantech.com](https://dewantech.com)
 
+## Update
+Added a modal pop-up feature with smooth open/close functionality and glowing CSS effects. Updated the HTML, CSS, and JavaScript files accordingly. It took quite a LOTS of effort to get everything working smoothly, but it was a great learning experience.
+
 ## Note
 Please give proper credit if you use any part of my code in your project.
 I’ve invested a lot of time and effort into developing these files - acknowledgment or a mention is always appreciated.
