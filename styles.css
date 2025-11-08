@@ -61,9 +61,31 @@ textarea:focus {
                         outline: none;
 }
 
-
-
 .required {
     color: red;
   font-size: 0.85rem;
+}
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+#save-btn {
+  background-color: #2563eb;
+  color: white;
+}
+
+#save-btn:hover {
+  background-color: #1e40af;
+}
+
+.secondary {
+  background-color: #ddd;
+}
+
+.secondary:hover {
+  background-color: #bbb;
 }
