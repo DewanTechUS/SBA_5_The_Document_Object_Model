@@ -459,7 +459,7 @@ h1 {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Modal Content */
+/* Modal Content 
 .modal-content {
   background-color: #fff;
   margin: auto;
@@ -470,7 +470,7 @@ h1 {
   max-width: 500px;
 }
 
-/* Close Button */
+/* Close Button
 .close {
   color: #aaa;
   float: right;
@@ -483,7 +483,7 @@ h1 {
   color: #000;
 }
 
-/* Modal overlay */
+/* The Modal (background)
 .modal {
   display: none;
   position: fixed;
@@ -497,10 +497,10 @@ h1 {
   background-color: rgba(0,0,0,0.5);
 }
 
-/* Modal content box */
+/* Modal content box
 .modal-content {
   background-color: #fff;
-  margin: 50px auto;
+  margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
   width: 80%;
@@ -508,7 +508,7 @@ h1 {
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
-/* Close (X) */
+/* Close button styling 
 .close {
   color: #aaa;
   float: right;
@@ -522,7 +522,7 @@ h1 {
   color: #000;
 }
 
-/* Trigger button styling (Create New Post) */
+/* Trigger button styling (Create New Post) 
 #myBtn {
   padding: 10px 22px;
   margin: 10px 0 18px;
@@ -541,3 +541,6 @@ h1 {
   background-color: #1d4ed8;
   transform: translateY(-2px);
 }
+
+giving up modal for now because bugs
+ */

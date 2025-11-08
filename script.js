@@ -331,3 +331,29 @@ function deletePost(id) {
 //load-my localStorage/show posts
 loadPosts();
 renderPosts();
+
+// grab modal elements
+//giving up modal for now because bugs 
+// // ref https://www.w3schools.com/howto/howto_css_modals.asp
+// // modal functionality
+// //
+// // open modal when button clicked
+// if (openModalBtn && modal && closeModalEl) {
+//   openModalBtn.addEventListener("click", function () {
+//     modal.style.display = "block";
+//   });
+
+//   // close when clicking X
+//   closeModalEl.addEventListener("click", function () {
+//     modal.style.display = "none";
+//     resetForm(); // also reset form if user closes modal
+//   });
+
+//   // close when clicking outside modal box
+//   window.addEventListener("click", function (event) {
+//     if (event.target === modal) {
+//       modal.style.display = "none";
+//       resetForm();
+//     }
+//   });
+// }
