@@ -284,3 +284,10 @@ function startEdit(id) {
       saveBtn.textContent = "Update Post";    
   cancelEditBtn.style.display = "inline-block"; // show cancel button
 }
+
+//i am adding delete functionality// eventlistener for delete button
+// https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+// ref w3schools https://www.w3schools.com/jsref/met_element_addeventlistener.asp
+cancelEditBtn.addEventListener("click", function () {
+  resetForm(); // reset form on cancel
+});
