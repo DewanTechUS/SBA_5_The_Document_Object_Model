@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #c2a1a1 0%, #7c00f8 100%);
-  color: #1abb0b;
+  background: linear-gradient(90deg, #2600ff 0%, #ff0000 100%);
+  color: #000000;
   margin: 0;
   padding: 10px;
   text-align: center;
@@ -12,9 +12,12 @@ body {
   max-width: 900px;
   margin: 30px auto;
   padding: 20px 16px 24px;
-  background: #ffffffee;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  background: #fcfafaee;
+  background: linear-gradient(90deg, hsla(244, 100%, 97%, 0.9) 0%, rgba(17, 240, 95, 0.8) 100%);
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(10, 10, 10, 10);
+  transition: box-shadow 0.3s ease;
+  
 }
 
 .profile-image1,
@@ -49,6 +52,16 @@ h4 {
   color: #374151;
 }
 
+h2 {
+  font-size: 1.5rem;
+  color: #1f2933;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #ccc3ea 0%, #ffb3b3 100%);
+  box-shadow: 0 2px 4px rgba(240, 0, 0, 0.1);
+}
 .subtitle {
   margin-top: 10px;
   font-size: 0.95rem;
@@ -146,12 +159,16 @@ button {
 }
 
 .secondary {
-  background-color: #e5e7eb;
-  color: #111827;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: 1px solid #d1d5db;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  margin: 8px;
+  
 }
 
 .secondary:hover {
-  background-color: #d1d5db;
+  background-color: #b80000;
 }
 
 .buttons {
@@ -159,7 +176,33 @@ button {
   display: flex;
   gap: 8px;
 }
+.edit-btn {
+  background-color: #10b981;
+  color: #fff;
+  border-radius: 8px;
+  padding: 6px 12px;
+  box-shadow: 0 0 6px rgba(16,185,129,0.5);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  margin: 0 auto;
+}
+.edit-btn:hover {
+  background-color: #059669;
+  transform: translateY(-1px);
+}
+.delete-btn {
+  background-color: #ef4444;
+  color: #fff;
+  border-radius: 8px;
+  padding: 6px 12px;
+  box-shadow: 0 0 6px rgba(239,68,68,0.5);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  margin: 0 auto;
 
+}
+.delete-btn:hover {
+  background-color: #dc2626;
+  transform: translateY(-1px);
+}
 .muted {
   color: #6b7280;
   font-size: 0.9rem;
