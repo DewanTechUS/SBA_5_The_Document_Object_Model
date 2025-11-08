@@ -314,3 +314,6 @@ function deletePost(id) {
     resetForm();
   }
 }
+//load-my localStorage/show posts
+loadPosts();
+renderPosts();
