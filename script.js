@@ -291,3 +291,26 @@ function startEdit(id) {
 cancelEditBtn.addEventListener("click", function () {
   resetForm(); // reset form on cancel
 });
+
+// delete post
+// i am  following notes are for delete function
+// https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+// ref w3schools: https://www.w3schools.com/jsref/prop_win_localstorage.asp
+// ref stackoverflow: https://stackoverflow.com/questions/5224906/how-to-save-javascript-array-to-localstorage
+function deletePost(id) {
+  const sure = confirm("Dewan is asking: are you sure you want to delete this post?");
+   
+  if (!sure) return;
+
+  blogPosts = blogPosts.filter(function (p) {
+    return p.id !== id;
+  });
+
+  savePosts();
+  
+  renderPosts();
+
+  if (postIdInput.value === id) {
+    resetForm();
+  }
+}
