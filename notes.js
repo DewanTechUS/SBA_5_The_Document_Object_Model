@@ -42,3 +42,10 @@
 // ref youtube https://www.youtube.com/watch?v=bVl5_UdcAy0 -- video
 // https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 // ref w3schools https://www.w3schools.com/jsref/met_element_addeventlistener.asp
+// ref prismic https://prismic.io/blog/css-background-effects
+// ref css-tricks https://css-tricks.com/animating-backgrounds-with-css/
+// ref youtube https://www.youtube.com/watch?v=8Z3x0T9mPfM
+// ref mdn https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio
+// ref w3schools https://www.w3schools.com/tags/tag_audio.asp
+// ref stackoverflow https://stackoverflow.com/questions/10465456/html5-audio-tag-with-multiple-sources
+// ref https://www.w3schools.com/html/html5_audio.asp
