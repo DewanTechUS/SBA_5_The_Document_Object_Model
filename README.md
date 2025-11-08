@@ -8,7 +8,9 @@ GitHub: [https://github.com/DewanTechUS](https://github.com/DewanTechUS)
 Portfolio: [https://dewantech.com](https://dewantech.com)
 
 ## Update 
-Added a modal pop-up feature with smooth open/close functionality and glowing CSS effects. Updated the HTML, CSS, and JavaScript files accordingly. It took quite a LOTS of effort to get everything working smoothly, but it was a great learning experience.
+Updated HTML, CSS, and JS to add the modal feature.
+Had to comment out some code to fix errors and make it work again.
+It took time and effort, but I learned a lot from it.
 
 ## Note
 Please give proper credit if you use any part of my code in your project.
@@ -16,7 +18,7 @@ I’ve invested a lot of time and effort into developing these files - acknowled
 Thank you for respecting my work. DEWAN MAHMUD ROCKY
 
 ## Overview
-This project is my completed work for SBA 5 — The Document Object Model (DOM).  
+This project is my completed work for SBA 5 - The Document Object Model (DOM).  
 It is an Interactive Personal Blog Platform that allows users to:
 
 - Create new posts  
@@ -38,7 +40,7 @@ The goal of this SBA is to demonstrate DOM manipulation, event handling, and loc
 - Create, edit, and delete blog posts  
 - Real-time validation of title and content fields  
 - All posts persist in `localStorage`  
-- Instant DOM updates — no refresh required  
+- Instant DOM updates - no refresh required  
 - Simple, clean, and user-friendly interface  
 
 ## Technologies Used
