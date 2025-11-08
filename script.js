@@ -216,7 +216,7 @@ function resetForm() {
 // ref mdn https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
 // ref w3schools https://www.w3schools.com/jsref/event_preventdefault.asp
 // ref stackoverflow https://stackoverflow.com/questions/5963669/what-is-the-use-of-event-preventdefault-in-javascript
-//
+// ref youtube https://www.youtube.com/watch?v=PqAaHf7JKls
 form.addEventListener("submit", function (event) {
   event.preventDefault(); // should stop page refresh
   // i need to get form values
@@ -259,3 +259,28 @@ post.content = content;
    renderPosts(); 
    resetForm();   
 });
+// load a post for edit it
+// i am connecting the edit button to the form. 
+// This function lets the user edit an existing blog post
+function startEdit(id) {
+
+  clearErrors();
+
+  // post by ID
+  let post = blogPosts.find(function (p) {
+    return p.id === id;
+  });
+
+  if (!post) {
+    return;
+  }
+
+     postIdInput.value = post.id;       
+     titleInput.value = post.title;     
+  contentInput.value = post.content; 
+
+                          // form title and button text
+  formTitle.textContent = "Edit Post";   
+      saveBtn.textContent = "Update Post";    
+  cancelEditBtn.style.display = "inline-block"; // show cancel button
+}
