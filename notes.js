@@ -1,7 +1,7 @@
 // Dewan Mahmud Rocky
 // this is a note is for who use my codes but dont mention me.
 // please give me credits if you are using my codes or acknowledge me in your project
-// i spent a lot of time and effort to write these codes and i would appreciate it
+// i spent a lot of time and effort to write these codes and it would be appreciated
 // thank you.
 // how to commit properly: git commit -m "your message" --author="Dewan Mahmud Rocky
 // follow this for commit like developer---- https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716
