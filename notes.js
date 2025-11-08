@@ -1,8 +1,9 @@
 // Dewan Mahmud Rocky
-// this is a note is for who use my codes but dont mention me.
-// please give me credits if you are using my codes or acknowledge me in your project
-// i spent a lot of time and effort to write these codes and it would be appreciated
-// thank you.
+// Note for anyone using my code:
+// Please give proper credit or acknowledgment if you use my code in your project.
+// I’ve invested significant time and effort into writing this, and your recognition would mean a lot.
+// Thank you for understanding and respecting my work.
+// Git commit note:
 // how to commit properly: git commit -m "your message" --author="Dewan Mahmud Rocky
 // follow this for commit like developer---- https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716
 // https://www.freecodecamp.org/news/git-cherry-pick-avoid-duplicate-commits/
@@ -40,7 +41,7 @@
 // ref youtube https://www.youtube.com/watch?v=PqAaHf7JKls -- video
 // ref youtube https://www.youtube.com/watch?v=HkFlM73G-hk -- video
 // ref youtube https://www.youtube.com/watch?v=bVl5_UdcAy0 -- video
-// https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+// ref https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 // ref w3schools https://www.w3schools.com/jsref/met_element_addeventlistener.asp
 // ref prismic https://prismic.io/blog/css-background-effects
 // ref css-tricks https://css-tricks.com/animating-backgrounds-with-css/
@@ -49,3 +50,4 @@
 // ref w3schools https://www.w3schools.com/tags/tag_audio.asp
 // ref stackoverflow https://stackoverflow.com/questions/10465456/html5-audio-tag-with-multiple-sources
 // ref https://www.w3schools.com/html/html5_audio.asp
+// ref https://www.w3schools.com/howto/howto_css_modals.asp
