@@ -178,22 +178,32 @@ function clearErrors() {
 // ref youtube https://www.youtube.com/watch?v=In0nB0ABaUk // took help from this video for validation
 // ref w3schools https://www.w3schools.com/jsref/prop_element_classlist.asp
                                    // Check required fields
-//
+// also i am trimming the input values to remove leading/trailing spaces
+// i removed alert boxes for validation errors and replaced with inline error messages
 function validateForm() {
+  clearErrors();
+
   let ok = true;
-// assume form is valid
-  if (title.value === "") {
-    alert("Please enter a title.");
+
+  if (!titleInput.value.trim()) {
+    titleError.textContent = "Title is required.";
+    titleInput.classList.add("input-error");
     ok = false;
   }
 
-  if (content.value === "") {
-    alert("Please enter some content.");
+  if (!contentInput.value.trim()) {
+    contentError.textContent = "Content is required.";
+    contentInput.classList.add("input-error");
     ok = false;
+  }
+
+  if (!ok) {
+    formErrors.textContent = "Please fix the errors above before submitting.";
   }
 
   return ok;
 }
+
  // reset form 
  // check ref notes.js file for references
 // function resetForm() { // reset form as per requirement of lesson // i lost my self here // ref mdn https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
@@ -219,47 +229,43 @@ function resetForm() {
 // ref youtube https://www.youtube.com/watch?v=PqAaHf7JKls
 
 form.addEventListener("submit", function (event) {
-  event.preventDefault(); // should stop page refresh
-  // i need to get form values
-  let title = titleInput.value; 
-  let content = contentInput.value;
-  let editingId = postIdInput.value; // if empty = new post // 
+  event.preventDefault(); // stop page refresh
 
-  // check if title or content is empty
-if (title === "" || content === "") { // title or content is empty
-    alert("Please enter a title and content.");
-    return; // stop here
+  // use our validation with inline error messages
+  if (!validateForm()) {
+    return;
   }
 
-if (editingId === "") {
-    // new post
-    let newPost = {
-   id: Date.now().toString(),
-   title: title,
-     content: content,
+  const title = titleInput.value.trim();
+  const content = contentInput.value.trim();
+  const editingId = postIdInput.value; // if empty => new post
+
+  if (editingId === "") {
+    // create new post
+    const newPost = {
+      id: Date.now().toString(),
+    title: title,
+    content: content,
       timestamp: new Date().toLocaleString()
-
-
     };
-
-    blogPosts.push(newPost); // add new post
+blogPosts.push(newPost);
   } else {
-    // editold post
-    let post = blogPosts.find(function (p) {
+    // update existing post
+const post = blogPosts.find(function (p) {
       return p.id === editingId;
     });
 
 if (post) {
-         post.title = title;
-post.content = content;
+      post.title = title;
+  post.content = content;
       post.timestamp = new Date().toLocaleString();
     }
   }
-  
-      savePosts();  
-   renderPosts(); 
-   resetForm();   
+savePosts();
+  renderPosts();
+resetForm();
 });
+
 // load a post for edit it
 // i am connecting the edit button to the form. 
 // This function lets the user edit an existing blog post
